@@ -31,7 +31,7 @@ public class Decagon extends AbstractShape{
 
 	@Override
 	public Double area() {
-		return (1/2) * perimeter * apothem;
+		return (perimeter * apothem) / 2;
 	}
 
 }

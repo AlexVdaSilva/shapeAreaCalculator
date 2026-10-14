@@ -18,5 +18,13 @@ public abstract class AbstractShape implements Shape {
 	public void setColor(Color color) {
 		this.color = color;
 	}
+	
+	@Override
+	public String toString() {
+		String shapeType = this.getClass().getSimpleName();
+		return "Shape: " + shapeType 
+				+ "\nColor: " + getColor()
+				+ "\nArea: " + String.format("%.2f", area());
+	}
 
 }

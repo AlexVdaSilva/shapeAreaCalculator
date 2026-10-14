@@ -4,21 +4,21 @@ import model.enums.Color;
 
 public class Heptagon extends AbstractShape{
 	
-	public Double sideLenght;
+	public Double perimeter;
 	public Double apothem;
 
 	public Heptagon(Color color, Double sideLenght, Double apothem) {
 		super(color);
-		this.sideLenght = sideLenght;
+		this.perimeter = sideLenght;
 		this.apothem = apothem;
 	}
 
 	public Double getSideLenght() {
-		return sideLenght;
+		return perimeter;
 	}
 
 	public void setSideLenght(Double sideLenght) {
-		this.sideLenght = sideLenght;
+		this.perimeter = sideLenght;
 	}
 
 	public Double getApothem() {
@@ -31,7 +31,7 @@ public class Heptagon extends AbstractShape{
 
 	@Override
 	public Double area() {
-		return (7/2) * sideLenght * apothem;
+		return (perimeter * apothem) / 2;
 	}
 
 }
